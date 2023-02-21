@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Row, Col, Container, Modal } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 import img from '../../img/pendemic-video.png'
 import virus from '../../img/virus-2.png'
 import virus1 from '../../img/virus-1.png'
@@ -79,7 +79,7 @@ const Protocol = ({ val }) => {
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={() => handePlay(0)}></button>
                       </div>
                       <div className="modal-body ">
-                    <iframe src={`https://www.youtube.com/embed/SwXT0Z_Ivck?autoplay=${play}&showinfo=0&rel=0`} allow="autoplay" width="90%" height="80%" className=''></iframe> 
+                    <iframe src={`https://www.youtube.com/embed/SwXT0Z_Ivck?autoplay=${play}&showinfo=0&rel=0`} title='video-3' allow="autoplay" width="90%" height="80%" className=''></iframe> 
                       </div>
                     </div>
                   </div>
