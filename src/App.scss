@@ -186,12 +186,12 @@ body {
 .navbar select {
     transition: all 0.3s;
     cursor: pointer;
-    font-size: 16px !important;
+    font-size: 15px !important;
 }
 
 @media screen and (max-width: 500px) {
     .navbar select {
-        font-size: 14px !important;
+        font-size: 13px !important;
     }
 }
 
