@@ -214,7 +214,7 @@ export default function Home({ val }) {
                   preferredCountries={['eg', 'sa', 'us', 'fr']}
                   enableSearch={true}
                   searchPlaceholder='phone number...'
-                  inputclassName={`rashed-bgInput w-100 mx-auto form-control`}
+                  inputclassName={`w-100 mx-auto form-control`}
                   inputProps={{
                     name: 'phone',
                     required: true,

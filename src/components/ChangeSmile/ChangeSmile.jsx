@@ -243,12 +243,12 @@ const ChangeSmile = ({val}) => {
         <Container>
           <Row dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
             <Col xl={3} lg={3} md={5} sm={11}>
-              <img src={logo} width={175} alt=""  />
+              <img src={logo} width={175} style={{height: '120px'}} alt="logo"  />
               <p className='mt-32'>At DentSpa® with the latest technology, and a great team of dentists and specialists, we are able to provide great, quality dental care to our patients.</p>
               <div className="iso__footer">
-                <img src={iso1} alt=""  />
-                <img src={iso2} alt=""  />
-                <img src={iso3} alt=""  />
+                <img src={iso1} alt="iso"  />
+                <img src={iso2} alt="iso"  />
+                <img src={iso3} alt="iso"  />
               </div>
             </Col>
             <Col xl={3} lg={3} md={5} sm={11}>

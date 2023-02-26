@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --mainColor: rgba(32, 187, 175, 1);
-    --secondColor: #3a2b6b;
+    // --mainColor: rgba(32, 187, 175, 1);
+    --mainColor: #a1f01b;
+    // --secondColor: #3a2b6b;
+    --secondColor: #000674;
     --white: #fff;
     --black: #000;
     --transparent: transparent;
@@ -58,7 +60,11 @@ body {
 }
 
 .rashed-bgInput {
-    background-color: var(--input) !important;
+    background-color: #FFFFF0 !important;
+}
+
+.react-tel-input .form-control {
+    background-color: #FFFFF0 !important;
 }
 
 
@@ -474,7 +480,8 @@ header .caption h1 {
 
     .app__protocol {
         padding: 150px 0;
-        background: #3a2b6b;
+        // background: #3a2b6b;
+        background: var(--secondColor);
         position: relative;
         min-height: calc(100vh - 90px);
         color: white;
@@ -507,7 +514,8 @@ header .caption h1 {
 
             button {
                 border: none;
-                background: rgba(32, 187, 175, 0.95);
+                // background: rgba(32, 187, 175, 0.95);
+                background: linear-gradient(-30deg, #a1f01b 50%, #a1e10c 50%);
                 color: #ffffff;
                 display: inline-block;
                 text-align: center;
@@ -817,14 +825,16 @@ header .caption h1 {
     }
 
     .animated-button1 {
-        background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%) !important;
+        // background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%) !important;
+        background: linear-gradient(-30deg, #000674 50%, #0a016b 50%);
     }
 
 }
 
 .nums {
     // padding: 62px 0;
-    background: rgba(32, 187, 175, 1);
+    // background: rgba(32, 187, 175, 1);
+    background: var(--mainColor);
 
     .numb {
         display: flex;
@@ -957,7 +967,8 @@ header .caption h1 {
     }
 
     .send__footer {
-        background-color: #3a296c;
+        // background-color: #3a296c;
+        background-color: var(--secondColor);
         border-radius: 20px;
         color: white;
         width: 100%;
@@ -1630,11 +1641,13 @@ input {
 }
 
 .fix-whats {
-    background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%);
+    // background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%);
+    background: linear-gradient(-30deg, #000674 50%, #0a016b 50%);
 }
 
  .fix-whats3 {
-    background: linear-gradient(-30deg, #06cabd 50%, #06bbaf 50%);
+    // background: linear-gradient(-30deg, #06cabd 50%, #06bbaf 50%);
+    background: linear-gradient(-30deg, #a1f01b 50%, #a1e10c 50%);
 }
 
 .dtc p {
@@ -1661,5 +1674,6 @@ input {
     transform: translateY(-50%);
 }.whats.fix-whats2, .whats.fix-whats {
     border-radius: 5px !important;
-    background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%) !important;
+    // background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%) !important;
+    background: linear-gradient(-30deg, #000674 50%, #0a016b 50%);
 }
