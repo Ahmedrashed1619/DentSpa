@@ -123,7 +123,7 @@ const ChangeSmile = ({val}) => {
             </Slider>
           </Row>
           <div className="center btn__animation" dir={val === 'ar' || val ===  'ur' || 'ur'? 'rtl' : 'ltr'}>
-            <button className="animated-button1 whats fix-whats3 w-btn w-btn-open" target="blank">
+            <button className="animated-button1 whats fix-whats2 w-btn w-btn-open" target="blank">
               <span></span><span></span><span></span><span></span>
               <div className="dt">
                 <div className="dtc">
