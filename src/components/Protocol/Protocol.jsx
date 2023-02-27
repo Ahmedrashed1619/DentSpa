@@ -33,9 +33,9 @@ const Protocol = ({ val }) => {
     <>
       <div className="app__protocol" >
         <Container>
-          <Row className='app__protocol-grid gx-lg-5 gx-0 gy-4'>
-            <Col lg={6} className='app__protocol-left col-11' dir={val === 'ar' || val === 'ur' ? 'rtl' : 'ltr'} >
-              <h3>Pandemic Distancing Protocol</h3>
+          <Row className='app__protocol-grid gx-lg-5 gx-0 gy-lg-0 gy-5 special-reverse'>
+            <Col lg={6} className='app__protocol-left' dir={val === 'ar' || val === 'ur' ? 'rtl' : 'ltr'} >
+              <h2 className='special-reverce-heading-lg mb-3'>Pandemic Distancing Protocol</h2>
               <p style={{fontSize: '14px'}}>To prevent any emergence of any potential transmission of any virus, we are using advanced equipment to sterilize every corner of our clinic; anticipated consumable resources needs (e.g. masks; gloves; hand hygiene products ;..) have been estimated. Your well-being matters to us, we expect the same consideration from you.</p>
               <div className="center">
                 <button className="animated-button1 whats fix-whats3 w-btn w-btn-open" target="blank">
@@ -52,11 +52,11 @@ const Protocol = ({ val }) => {
                 <img className='virus-3' src={virus} alt="" />
               </div>
             </Col>
-            <Col lg={6} className='app__protocol-right col-11 mx-auto'>
-
+            <Col lg={6} className='app__protocol-right mx-auto'>
+              <h2 className='special-reverce-heading-sm h1 mb-4'>Pandemic Distancing Protocol</h2>
               <div className='video-wrapper' style={{ position: 'relative', boxShadow: '0 25px 80px rgb(0 0 0 / 20%)' }}>
 
-                <img src={img} alt="" className='w-100' />
+                <img src={img} alt="video-wrapper" className='w-100' />
 
                 <div className="play" onClick={() => handePlay(1)} data-bs-toggle="modal" data-bs-target="#exampleModal10">
                   <BsPlayFill size={29} color={'#fff'} />

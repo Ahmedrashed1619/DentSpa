@@ -17,6 +17,7 @@ import doctor3 from './img/doctor3.jpg';
 import doctor4 from './img/doctor4.jpg';
 import doctor5 from './img/doctor5.jpg';
 import Member from './Member';
+// import $ from 'jquery';
 // import { BsWhatsapp } from 'react-icons/bs';
 // import img from './img/pendemic-video.png'
 
@@ -43,8 +44,8 @@ export default function Home({ val }) {
   };
 
   const slider1 = {
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     infinite: true,
     // centerMode: true,
     slidesToShow: 1,
@@ -106,8 +107,6 @@ export default function Home({ val }) {
     //   }
     // ]
   };
-
-
   const cases =
     [
       {
@@ -196,13 +195,15 @@ export default function Home({ val }) {
       },
     ]
 
+    
+
 
 
 
 
   return (
     <>
-      <header className='py-5' dir={val === 'ar' || val ===  'ur'    ? 'rtl' : 'ltr'}>
+      <header className='py-5' dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
         <div className="container h-100">
           <div className="row gy-4 column__sm-reverse gx-md-5 gx-0 d-flex justify-content-center align-items-center mt-5 pt-5">
             <div className="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-8">
@@ -258,26 +259,26 @@ export default function Home({ val }) {
         </div>
       </header>
 
-      <section id='rashed' className='py-5 rashed-mainBg' dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
+      <section id='rashed' className='py-5 rashed-mainBg second-sec' dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
         <div className="container">
-          <div className="row gx-0 d-flex justify-content-center align-items-center bg-white rounded-3 shadow p-3 special-sec">
+          <div className="row gx-0 d-flex justify-content-center align-items-center bg-white rounded-3 shadow px-3 py-2 special-sec">
             <div className="col-md-4 col-11">
               <div className="feature">
-                <img src={img1} className='w-75' style={{ height: '200px' }} alt="doctor" />
+                <img src={img1} className='w-75' style={{ height: '180px' }} alt="doctor" />
                 <h6 className='mb-2'>SAME DAY DENTISTRY</h6>
                 <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>Procedures such as a root canal & crown, extraction & implant, and bone graft/sinus lift normally take 3-5 visits. We can do it in one!</p>
               </div>
             </div>
             <div className="col-md-4 col-11">
               <div className="feature">
-                <img src={img2} className='w-75' style={{ height: '200px' }} alt="doctor" />
+                <img src={img2} className='w-75' style={{ height: '180px' }} alt="doctor" />
                 <h6 className='mb-2'>SPECIALIST CONSULTATION</h6>
                 <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>We take pride in explaining to our patients the status of their dental health. We guide you in developing an effective treatment plan.</p>
               </div>
             </div>
             <div className="col-md-4 col-11">
               <div className="feature">
-                <img src={img3} className='w-75' style={{ height: '200px' }} alt="doctor" />
+                <img src={img3} className='w-75' style={{ height: '180px' }} alt="doctor" />
                 <h6 className='mb-2'>ONLINE APPOINTMENT</h6>
                 <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>Fill out the form, tell us your convenient time for an appointment and we will call you for confirmation</p>
               </div>
@@ -321,7 +322,7 @@ export default function Home({ val }) {
                 </div>
                 <div className="col-md-6 col-11">
                   <div className="img-tab">
-                    <Slider {...slider1} className='text-center'>
+                    <Slider {...slider1} className='text-center' dir='ltr'>
                       {cases.map((item, i) => (
                         <img key={i} src={item.img} alt={item.alt} style={{ minHeight: '300px', maxHeight: '350px', cursor: 'pointer' }} className='rounded-4' />
                       ))}

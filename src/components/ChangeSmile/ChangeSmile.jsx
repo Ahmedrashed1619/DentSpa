@@ -56,7 +56,7 @@ const ChangeSmile = ({val}) => {
       {
         id: 1,
         img: img1,
-        title: 'Clear Aligner &amp; Invisalign',
+        title: 'Clear Aligner & Invisalign',
         text: `Invisalign or Clear Alaigner is a series of clear teeth aligners that work to
         straighten the teeth over time without the hassle, pain, and no look of metal
         braces, it is the new innovation of orthodontics.`
@@ -190,24 +190,24 @@ const ChangeSmile = ({val}) => {
             <h2 className='rashed-secondColor mb-4'>Our Partners</h2>
           </div>
           <Row className='mt-5'>
-            <Col xl={3} lg={3} md={4} sm={6}>
+            <Col xl={3} lg={3} md={4} className='col-6'>
               <div className="partimg">
-                <img src={partner1} alt="" width={'150px'} className="img-responsive" />
+                <img src={partner1} alt="part" className=" w-100" />
               </div>
             </Col>
-            <Col xl={3} lg={3} md={4} sm={6}>
+            <Col xl={3} lg={3} md={4} className='col-6'>
               <div className="partimg">
-                <img src={partner2} alt="" width={'150px'} className="img-responsive" />
+                <img src={partner2} alt="part" className=" w-100" />
               </div>
             </Col>
-            <Col xl={3} lg={3} md={4} sm={6}>
+            <Col xl={3} lg={3} md={4} className='col-6'>
               <div className="partimg">
-                <img src={partner3} alt="" width={'150px'} className="img-responsive" />
+                <img src={partner3} alt="part" className=" w-100" />
               </div>
             </Col>
-            <Col xl={3} lg={3} md={4} sm={6}>
+            <Col xl={3} lg={3} md={4} className='col-6'>
               <div className="partimg">
-                <img src={partner4} alt="" width={'150px'} className="img-responsive" />
+                <img src={partner4} alt="part" className=" w-100" />
               </div>
             </Col>
 
@@ -216,11 +216,11 @@ const ChangeSmile = ({val}) => {
           </Row>
         </Container>
       </div>
-      <div className="app__typing" dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
+      <div className="app__typing py-2" dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
         <Container>
           <div className='grid'>
             <div className="content">
-              <p>   The most qualified, skillful and professional Doct
+              <p className='h6'>   The most qualified, skillful and professional Doct
 
               </p>
             </div>
