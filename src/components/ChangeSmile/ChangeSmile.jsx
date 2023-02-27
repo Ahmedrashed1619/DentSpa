@@ -263,25 +263,25 @@ const ChangeSmile = ({val}) => {
                   <br />
                   info@dentspa.com</p>
                   <ul className="list-unstyled list-inline social">
-                            <li><a href="tel://+90 542 258 88 39" style= {{color: '#3b5998',background:'#ecf0f8'}} >
-                                    <i className="fas fa-phone"  ></i> </a>
-                            </li>
-                            <li> 
-                              <a href="https://wa.me/905422588839?text=Hello%2C+Can+I+book+an+appointment%21" target="blank" style={{ color: '#25d366 ',background:' #25d3661f' }}
-                                     >
-                                    <i className="fab fa-whatsapp"></i> </a>
-                      
-                            </li>
-                            <li><a href="https://m.me/DentSpaINT" target="blank" style= {{color:' #0084ff',background:' #ecf5f8'}} >
-                                    <i className="fab fa-facebook-messenger"></i> </a>
-                            </li>
-                            <li><a href="mailto:info@dentspa.com.tr" style={{ color:' #bc2a8d ',background:' #f8ecf4' }}>
-                                    <i className="far fa-envelope"></i> </a>
-                            </li>
-                            <li><a href="https://www.google.com/maps/dir//Teşvikiye+Mahallesi,+DentSpa+Ağız+ve+Diş+Sağlığı+Polikliniği,+Şişli%2FIstanbul/" target="blank" style={{ color:' #dc4b3e',background:' #b2f3fe'  }}>
-                                    <i className="fas fa-map-marker-alt"></i> </a>
-                            </li>
-                        </ul>
+                      <li><a href="tel://+90 542 258 88 39" style= {{color: '#3b5998',background:'#ecf0f8'}} >
+                              <i className="fas fa-phone"  ></i> </a>
+                      </li>
+                      <li> 
+                        <a href="https://wa.me/905422588839?text=Hello%2C+Can+I+book+an+appointment%21" target="blank" style={{ color: '#25d366 ',background:' #25d3661f' }}
+                                >
+                              <i className="fab fa-whatsapp"></i> </a>
+                
+                      </li>
+                      <li><a href="https://m.me/DentSpaINT" target="blank" style= {{color:' #0084ff',background:' #ecf5f8'}} >
+                              <i className="fab fa-facebook-messenger"></i> </a>
+                      </li>
+                      <li><a href="mailto:info@dentspa.com.tr" style={{ color:' #bc2a8d ',background:' #f8ecf4' }}>
+                              <i className="far fa-envelope"></i> </a>
+                      </li>
+                      <li><a href="https://www.google.com/maps/dir//Teşvikiye+Mahallesi,+DentSpa+Ağız+ve+Diş+Sağlığı+Polikliniği,+Şişli%2FIstanbul/" target="blank" style={{ color:' #dc4b3e',background:' #b2f3fe'  }}>
+                              <i className="fas fa-map-marker-alt"></i> </a>
+                      </li>
+                  </ul>
               </div>
             </Col>
             <Col xl={3} lg={3} md={5} sm={11}>

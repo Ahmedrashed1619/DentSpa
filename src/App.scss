@@ -192,6 +192,58 @@ body {
 
 /* navbar */
 
+.navbar ul li a {
+    padding: 5px;
+}
+
+.navbar span img {
+    width: 120px;
+}
+
+.navbar .special-div {
+    width: 250px
+}
+
+.navbar ul {
+    width: 120px
+}
+
+@media screen and (max-width: 992px) {
+    .navbar span img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar span img {
+        width: 90px;
+    }
+
+    .navbar .special-div {
+        width: 240px
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .navbar span img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .navbar span img {
+        width: 75px;
+    }
+
+    .navbar .special-div {
+        width: 230px
+    }
+
+    .navbar ul {
+        width: 110px
+    }
+}
+
 .navbar select {
     transition: all 0.3s;
     cursor: pointer;
@@ -1800,3 +1852,4 @@ input {
 .special-tab {
     white-space: nowrap;
 }
+
