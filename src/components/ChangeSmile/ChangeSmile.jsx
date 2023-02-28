@@ -112,8 +112,8 @@ const ChangeSmile = ({val}) => {
     <>
       <div className="app__ChangeSmile" dir={val === 'ar' || val ===  'ur'  ? 'rtl' : 'ltr'}>
         <Container >
-          <div className="main-title-section text-center mb-3">
-            <h2 className='rashed-secondColor mb-4'>We Change Your Smile, You Change Your Life</h2>
+          <div className="main-title-section text-center">
+            <h2 className='rashed-secondColor'>We Change Your Smile, You Change Your Life</h2>
           </div>
           <Row className='app__ChangeSmile-img mt-5' dir={val === 'ar' || val ===  'ur' || 'ur'? 'rtl' : 'ltr'}>
             <Slider {...slider2}>
@@ -186,10 +186,10 @@ const ChangeSmile = ({val}) => {
       </div>
       <div className="app__Partners " dir={val === 'ar' || val ===  'ur'? 'rtl' : 'ltr'}>
         <Container>
-          <div className="main-title-section text-center mb-3">
-            <h2 className='rashed-secondColor mb-4'>Our Partners</h2>
+          <div className="main-title-section text-center mb-4">
+            <h2 className='rashed-secondColor h1'>Our Partners</h2>
           </div>
-          <Row className='mt-5'>
+          <Row>
             <Col xl={3} lg={3} md={4} className='col-6'>
               <div className="partimg">
                 <img src={partner1} alt="part" className=" w-100" />

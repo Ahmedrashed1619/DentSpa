@@ -463,7 +463,7 @@ export default function Home({ val }) {
       <section id='rashed2' className='py-5'>
         <div className="container">
           <div className="main-title-section text-center mb-3">
-            <h2 className='rashed-secondColor mb-4'>Your Smile Creators</h2>
+            <h2 className='rashed-secondColor mb-4 h1'>Your Smile Creators</h2>
             <p className='mb-0 text-muted'>Meet Our Expert Doctors</p>
           </div>
           <div className="members">
