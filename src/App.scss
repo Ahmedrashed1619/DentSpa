@@ -3,11 +3,17 @@
 :root {
     // --mainColor: rgba(32, 187, 175, 1);
     // --mainColor: #a1f01b;
-    --mainColor: #a0c65a;
+
+    --mainColor: #283b65;
+    // --mainColor: #a0c65a;
     // --mainColor: #82a73f;
+
     // --secondColor: #3a2b6b;
     // --secondColor: #000674;
-    --secondColor: #283b65;
+
+    --secondColor: #a0c65a;
+    // --secondColor: #283b65;
+    
     --white: #fff;
     --black: #000;
     --transparent: transparent;
@@ -597,7 +603,8 @@ header .caption h1 {
                 border: none;
                 // background: rgba(32, 187, 175, 0.95);
                 // background: linear-gradient(-30deg, var(--mainColor) 50%, #a1e10c 50%);
-                background: linear-gradient(-30deg, var(--mainColor) 50%, #a0b74b  50%);
+                // background: linear-gradient(-30deg, var(--mainColor) 50%, #a0b74b  50%);
+                background: linear-gradient(-30deg, var(--mainColor) 50%, #19375c 50%);
                 color: #ffffff;
                 display: inline-block;
                 text-align: center;
@@ -1708,7 +1715,7 @@ input {
 .animated-button1.whats.fix-whats span:nth-child(2),
 .animated-button1.whats.fix-whats span:nth-child(3),
 .animated-button1.whats.fix-whats span:nth-child(4) {
-    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #af98f5);
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #97ffcd);
     // background: linear-gradient(to bottom, var(--secondColor), #af98f5);
 }
 
@@ -1720,7 +1727,7 @@ input {
 .animated-button1.whats.hidden-xs.fix-whats span:nth-child(2),
 .animated-button1.whats.hidden-xs.fix-whats span:nth-child(3),
 .animated-button1.whats.hidden-xs.fix-whats span:nth-child(4) {
-    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #97ffcd);
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #af98f5);
     // background: linear-gradient(to bottom, rgba(43, 8, 8, 0), var(--mainColor));
 }
 
@@ -1748,13 +1755,15 @@ input {
 .fix-whats {
     // background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%);
     // background: linear-gradient(-30deg, var(--secondColor) 50%, #0a016b 50%);
-    background: linear-gradient(-30deg, var(--secondColor) 50%, #19375c 50%);
+    // background: linear-gradient(-30deg, var(--secondColor) 50%, #19375c 50%);
+    background: linear-gradient(-30deg, var(--secondColor) 50%, #a0b74b 50%);
 }
 
  .fix-whats3 {
     // background: linear-gradient(-30deg, var(--mainColor) 50%, #06bbaf 50%);
     // background: linear-gradient(-30deg, var(--mainColor) 50%, #a1e10c 50%);
-    background: linear-gradient(-30deg, var(--mainColor) 50%, #a0b74b 50%);
+    // background: linear-gradient(-30deg, var(--mainColor) 50%, #a0b74b 50%);
+    background: linear-gradient(-30deg, var(--mainColor) 50%, #19375c 50%);
 }
 
 .dtc p {
@@ -1783,7 +1792,8 @@ input {
     border-radius: 5px !important;
     // background: linear-gradient(-30deg, #402d75 50%, #3a296c 50%) !important;
     // background: linear-gradient(-30deg, var(--secondColor) 50%, #0a016b 50%);
-    background: linear-gradient(-30deg, var(--secondColor) 50%, #19375c 50%);
+    // background: linear-gradient(-30deg, var(--secondColor) 50%, #19375c 50%);
+    background: linear-gradient(-30deg, var(--secondColor) 50%, #a0b74b 50%);
 }
 
 
