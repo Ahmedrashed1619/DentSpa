@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DentSpa/static/css/main.a9f61a85.css",
+    "main.css": "/DentSpa/static/css/main.43382b19.css",
     "main.js": "/DentSpa/static/js/main.36812b15.js",
     "static/media/slider.png": "/DentSpa/static/media/slider.95b67b186c66cfab3b65.png",
     "static/media/logo.png": "/DentSpa/static/media/logo.338ee8a816806375e20f.png",
@@ -41,11 +41,11 @@
     "static/media/slick.ttf": "/DentSpa/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/DentSpa/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/DentSpa/index.html",
-    "main.a9f61a85.css.map": "/DentSpa/static/css/main.a9f61a85.css.map",
+    "main.43382b19.css.map": "/DentSpa/static/css/main.43382b19.css.map",
     "main.36812b15.js.map": "/DentSpa/static/js/main.36812b15.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9f61a85.css",
+    "static/css/main.43382b19.css",
     "static/js/main.36812b15.js"
   ]
 }
