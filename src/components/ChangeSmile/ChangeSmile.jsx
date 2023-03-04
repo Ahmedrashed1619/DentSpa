@@ -225,7 +225,8 @@ const ChangeSmile = ({val}) => {
               </p>
             </div>
             <div className="visible-xs">
-              <button className="animated-button1 whats fix-whats3 btn w-btn-open">
+              {/* <button className="animated-button1 whats fix-whats3 btn w-btn-open"> */}
+              <button className="animated-button1 whats fix-whats2 btn w-btn-open">
                 <span></span><span></span><span></span><span></span>
                 <div className="dt d-flex justify-content-center align-item-center flex-row"><div className="dtc">
                   <p>WhatsApp<label>Get Immediate Info</label></p>

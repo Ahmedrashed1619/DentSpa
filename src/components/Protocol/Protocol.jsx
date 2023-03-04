@@ -38,7 +38,8 @@ const Protocol = ({ val }) => {
               <h2 className='special-reverce-heading-lg mb-3'>Pandemic Distancing Protocol</h2>
               <p style={{fontSize: '14px'}}>To prevent any emergence of any potential transmission of any virus, we are using advanced equipment to sterilize every corner of our clinic; anticipated consumable resources needs (e.g. masks; gloves; hand hygiene products ;..) have been estimated. Your well-being matters to us, we expect the same consideration from you.</p>
               <div className="center">
-                <button className="animated-button1 whats fix-whats3 w-btn w-btn-open" target="blank">
+                {/* <button className="animated-button1 whats fix-whats3 w-btn w-btn-open" target="blank"> */}
+                <button className="animated-button1 whats fix-whats2 w-btn w-btn-open" target="blank">
                   <span></span><span></span><span></span><span></span>
                   <div className="dt">
                     <div className="dtc">

@@ -568,7 +568,8 @@ header .caption h1 {
     .app__protocol {
         padding: 150px 0;
         // background: #3a2b6b;
-        background: var(--secondColor);
+        // background: var(--secondColor);
+        background: var(--mainColor);
         position: relative;
         min-height: calc(100vh - 90px);
         color: white;
@@ -604,7 +605,8 @@ header .caption h1 {
                 // background: rgba(32, 187, 175, 0.95);
                 // background: linear-gradient(-30deg, var(--mainColor) 50%, #a1e10c 50%);
                 // background: linear-gradient(-30deg, var(--mainColor) 50%, #a0b74b  50%);
-                background: linear-gradient(-30deg, var(--mainColor) 50%, #19375c 50%);
+                background: linear-gradient(-30deg, var(--secondColor) 50%, #a0b74b  50%);
+                // background: linear-gradient(-30deg, var(--mainColor) 50%, #19375c 50%);
                 color: #ffffff;
                 display: inline-block;
                 text-align: center;
@@ -986,7 +988,8 @@ header .caption h1 {
 }
 
 .app__typing {
-    background-color: var(--secondColor);
+    // background-color: var(--secondColor);
+    background-color: var(--mainColor);
     padding: 2px 0;
 
     .grid {

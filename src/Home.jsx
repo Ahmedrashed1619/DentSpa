@@ -232,12 +232,14 @@ export default function Home({ val }) {
               <div className="caption text-white">
                 <p>Hollywood Smile - Dental Implants - Orthodontics</p>
                 <h1>All Dental Treatments In One
-                  <strong className='rashed-mainColor'> Luxury Place</strong>
+                  {/* <strong className='rashed-mainColor'> Luxury Place</strong> */}
+                  <strong className='rashed-secondColor'> Luxury Place</strong>
                 </h1>
                 <p className='mb-1'>70% less price than abroad</p>
                 <p className='mb-0'>The most comfortable dental polyclinic in ISTANBUL</p>
                 <div className="visible-xs">
-                  <button className="animated-button1 whats fix-whats3 btn w-btn-open">
+                  {/* <button className="animated-button1 whats fix-whats3 btn w-btn-open"> */}
+                  <button className="animated-button1 whats fix-whats2 btn w-btn-open">
                             <span></span><span></span><span></span><span></span>
                             <div className="dt d-flex justify-content-center align-item-center flex-row">
                                 <div className="dtc">
@@ -474,7 +476,8 @@ export default function Home({ val }) {
             </Slider>
           </div>
           <div className="send text-center mt-5"> 
-              <button className="animated-button1 whats fix-whats2 w-btn w-btn-open" target="blank">
+              {/* <button className="animated-button1 whats fix-whats2 w-btn w-btn-open" target="blank"> */}
+              <button className="animated-button1 whats fix-whats3 w-btn w-btn-open" target="blank">
                   <span></span><span></span><span></span><span></span>
                   <div className="dt">
                       <div className="dtc">
