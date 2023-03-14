@@ -6,6 +6,11 @@ import virus1 from '../../img/virus-1.png'
 import planet from '../../img/planet-1.png'
 import { BsPlayFill } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
+import Slider from "react-slick";
+import teeth1 from '../../img/img/gif/1.png';
+import teeth2 from '../../img/img/gif/2.png';
+import teeth3 from '../../img/img/gif/3.png';
+import teeth4 from '../../img/img/gif/4.png';
 
 const Protocol = ({ val }) => {
   const [play, setPlay] = useState(0);
@@ -28,6 +33,49 @@ const Protocol = ({ val }) => {
   useEffect(() => {
 
   }, [play])
+
+
+
+  const slider1 = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    // centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+  };
+  const cases =
+    [
+      {
+        id: 1,
+        img: teeth1,
+        alt: '111'
+      },
+      {
+        id: 2,
+        img: teeth2,
+        alt: '222'
+      },
+      {
+        id: 3,
+        img: teeth3,
+        alt: '333'
+      },
+      {
+        id: 4,
+        img: teeth4,
+        alt: '444'
+      }
+    ]
+
+
+
+
 
   return (
     <>
@@ -55,7 +103,7 @@ const Protocol = ({ val }) => {
             </Col>
             <Col lg={6} className='app__protocol-right mx-auto'>
               <h2 className='special-reverce-heading-sm h1 mb-4'>Pandemic Distancing Protocol</h2>
-              <div className='video-wrapper' style={{ position: 'relative', boxShadow: '0 25px 80px rgb(0 0 0 / 20%)' }}>
+              {/* <div className='video-wrapper' style={{ position: 'relative', boxShadow: '0 25px 80px rgb(0 0 0 / 20%)' }}>
 
                 <img src={img} alt="video-wrapper" className='w-100' />
 
@@ -86,9 +134,16 @@ const Protocol = ({ val }) => {
                   </div>
                 </div>
 
+              </div> */}
+              <div className="img-tab">
+                <Slider {...slider1} className='text-center' dir='ltr'>
+                  {cases.map((item, i) => (
+                    <img key={i} src={item.img} alt={item.alt} style={{ minHeight: '250px', maxHeight: '300px', cursor: 'pointer' }} className=' rounded-4' />
+                  ))}
+                </Slider>
               </div>
-              <img className='virus-1' src={virus} alt="" />
-              <img className='virus-2' src={virus1} alt="" />
+              <img className='virus-1' src={virus} alt="virus-1" />
+              <img className='virus-2' src={virus1} alt="virus-2" />
             </Col>
           </Row>
         </Container>

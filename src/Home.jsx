@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from "react-slick";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import img111 from './img/img/slider.png';
 import img1 from './img/img/img1.png';
 import img2 from './img/img/img2.png';
 import img3 from './img/img/img3.png';
@@ -161,41 +162,61 @@ export default function Home({ val }) {
         },
       ]
     };
-  const doctors =
-    [
-      {
-        id: 1,
-        img: doctor1,
-        title: 'Dr. Betül Akyıldız',
-        text: 'Orthodontics'
-      },
-      {
-        id: 2,
-        img: doctor2,
-        title: 'Dr. Tuğçe Akın',
-        text: 'Prosthodontics'
-      },
-      {
-        id: 3,
-        img: doctor3,
-        title: 'Dr. Şükran Tüfekçioğlu',
-        text: 'Oral-Maxillofacial Surgery and Implantology'
-      },
-      {
-        id: 4,
-        img: doctor4,
-        title: 'Dr. Serdar Yilmaz',
-        text: 'Oral and Maxillofacial Surgeon'
-      },
-      {
-        id: 5,
-        img: doctor5,
-        title: 'Dr. Ezgihan Arslan',
-        text: 'Pedodontology'
-      },
-    ]
+    const doctors =
+      [
+        {
+          id: 1,
+          img: doctor1,
+          title: 'Dr. Betül Akyıldız',
+          text: 'Orthodontics'
+        },
+        {
+          id: 2,
+          img: doctor2,
+          title: 'Dr. Tuğçe Akın',
+          text: 'Prosthodontics'
+        },
+        {
+          id: 3,
+          img: doctor3,
+          title: 'Dr. Şükran Tüfekçioğlu',
+          text: 'Oral-Maxillofacial Surgery and Implantology'
+        },
+        {
+          id: 4,
+          img: doctor4,
+          title: 'Dr. Serdar Yilmaz',
+          text: 'Oral and Maxillofacial Surgeon'
+        },
+        {
+          id: 5,
+          img: doctor5,
+          title: 'Dr. Ezgihan Arslan',
+          text: 'Pedodontology'
+        },
+      ]
 
-    
+      const feature =
+      [
+        {
+          id: 1,
+          img: img1,
+          title: 'SAME DAY DENTISTRY',
+          text: 'Procedures such as a root canal & crown, extraction & implant, and bone graft/sinus lift normally take 3-5 visits. We can do it in one!'
+        },
+        {
+          id: 2,
+          img: img2,
+          title: 'SAME DAY DENTISTRY',
+          text: 'Procedures such as a root canal & crown, extraction & implant, and bone graft/sinus lift normally take 3-5 visits. We can do it in one!'
+        },
+        {
+          id: 3,
+          img: img3,
+          title: 'SAME DAY DENTISTRY',
+          text: 'Procedures such as a root canal & crown, extraction & implant, and bone graft/sinus lift normally take 3-5 visits. We can do it in one!'
+        },
+      ]
 
 
 
@@ -203,89 +224,104 @@ export default function Home({ val }) {
 
   return (
     <>
-      <header className='py-5' dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
-        <div className="container h-100">
-          <div className="row gy-4 column__sm-reverse gx-md-5 gx-0 d-flex justify-content-center align-items-center mt-5 pt-5">
-            <div className="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-8">
-              <form className='form bg-white text-center py-4 px-3 rounded-3' dir='ltr'>
-                <h4 className='fw-bold mb-3 rashed-secondColor'>Diagnosis And Cost In Minutes</h4>
-                <input type="text" placeholder='Full Name' className='mx-auto form-control rashed-bgInput mb-3' required name="name" id="name" />
-                <PhoneInput
-                  country={val === 'ar' ? 'eg': val ===  'ur' ? 'tr' : val === 'en' ? 'us' : val === 'fr' ? 'fr' : val === 'ru'? 'ru' :'ae' }
-                  preferredCountries={['eg', 'sa', 'us', 'fr']}
-                  enableSearch={true}
-                  searchPlaceholder='phone number...'
-                  inputclassName={`w-100 mx-auto form-control`}
-                  inputProps={{
-                    name: 'phone',
-                    required: true,
-                    id: 'phone',
-                    // autoFocus: true
-                  }}
-                  inputStyle={{width:'100%'}}
-                />
-                <textarea placeholder='Message' className='mx-auto form-control rashed-bgInput my-3' name='message' id='message'></textarea>
-                <button type='submit' className='btn rashed-mainBtn'>Send Message</button>
-              </form>
-            </div>
-            <div className="col-md-7 col-11">
-              <div className="caption text-white">
-                <p>Hollywood Smile - Dental Implants - Orthodontics</p>
-                <h1>All Dental Treatments In One
-                  {/* <strong className='rashed-mainColor'> Luxury Place</strong> */}
-                  <strong className='rashed-secondColor'> Luxury Place</strong>
-                </h1>
-                <p className='mb-1'>70% less price than abroad</p>
-                <p className='mb-0'>The most comfortable dental polyclinic in ISTANBUL</p>
-                <div className="visible-xs">
-                  {/* <button className="animated-button1 whats fix-whats3 btn w-btn-open"> */}
-                  <button className="animated-button1 whats fix-whats2 btn w-btn-open">
-                            <span></span><span></span><span></span><span></span>
-                            <div className="dt d-flex justify-content-center align-item-center flex-row">
-                                <div className="dtc">
-                                    <p>WhatsApp
-                                        <label>Get Immediate Info</label>
-                                    </p>
-                                </div>
-                                <div className="dtc">
-                                    <i className="fab fa-whatsapp"></i>
-                                </div>
-                            </div>
-                        </button>
-                    </div>
-                {/* <button className='btn rashed-mainBtn rashed-mainColor mt-3 py-2 px-4'>Send Message</button> */}
+      <header className='py-5' style={{backgroundImage: `url(${img111}`}} dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
+          <div className="container h-100">
+            <div className="row gy-4 column__sm-reverse gx-md-5 gx-0 d-flex justify-content-center align-items-center mt-5 pt-5">
+              <div className="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-8">
+                <form className='form bg-white text-center py-4 px-3 rounded-3' dir='ltr'>
+                  <h4 className='fw-bold mb-3 rashed-secondColor'>Diagnosis And Cost In Minutes</h4>
+                  <input type="text" placeholder='Full Name' className='mx-auto form-control rashed-bgInput mb-3' required name="name" id="name" />
+                  <PhoneInput
+                    country={val === 'ar' ? 'eg': val ===  'ur' ? 'tr' : val === 'en' ? 'us' : val === 'fr' ? 'fr' : val === 'ru'? 'ru' :'ae' }
+                    preferredCountries={['eg', 'sa', 'us', 'fr']}
+                    enableSearch={true}
+                    searchPlaceholder='phone number...'
+                    inputclassName={`w-100 mx-auto form-control`}
+                    inputProps={{
+                      name: 'phone',
+                      required: true,
+                      id: 'phone',
+                      // autoFocus: true
+                    }}
+                    inputStyle={{width:'100%'}}
+                  />
+                  <textarea placeholder='Message' className='mx-auto form-control rashed-bgInput my-3' name='message' id='message'></textarea>
+                  <button type='submit' className='btn rashed-mainBtn'>Send Message</button>
+                </form>
+              </div>
+              <div className="col-md-7 col-11">
+                <div className="caption text-white">
+                  <p>Hollywood Smile - Dental Implants - Orthodontics</p>
+                  <h1>All Dental Treatments In One
+                    {/* <strong className='rashed-mainColor'> Luxury Place</strong> */}
+                    <strong className='rashed-secondColor'> Luxury Place</strong>
+                  </h1>
+                  <p className='mb-1'>70% less price than abroad</p>
+                  <p className='mb-0'>The most comfortable dental polyclinic in ISTANBUL</p>
+                  <div className="visible-xs">
+                    {/* <button className="animated-button1 whats fix-whats3 btn w-btn-open"> */}
+                    <button className="animated-button1 whats fix-whats2 btn w-btn-open">
+                              <span></span><span></span><span></span><span></span>
+                              <div className="dt d-flex justify-content-center align-item-center flex-row">
+                                  <div className="dtc">
+                                      <p>WhatsApp
+                                          <label>Get Immediate Info</label>
+                                      </p>
+                                  </div>
+                                  <div className="dtc">
+                                      <i className="fab fa-whatsapp"></i>
+                                  </div>
+                              </div>
+                          </button>
+                      </div>
+                  {/* <button className='btn rashed-mainBtn rashed-mainColor mt-3 py-2 px-4'>Send Message</button> */}
 
-                </div>
+                  </div>
+              </div>
             </div>
           </div>
-        </div>
       </header>
+        
 
       <section id='rashed' className='py-5 rashed-mainBg second-sec' dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
         <div className="container">
-          <div className="row gx-0 d-flex justify-content-center align-items-center bg-white rounded-3 shadow px-3 py-2 special-sec">
-            <div className="col-md-4 col-11">
-              <div className="feature">
-                <img src={img1} className='w-75' style={{ height: '180px' }} alt="doctor" />
-                <h6 className='mb-2'>SAME DAY DENTISTRY</h6>
-                <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>Procedures such as a root canal & crown, extraction & implant, and bone graft/sinus lift normally take 3-5 visits. We can do it in one!</p>
+          {Object.keys(feature).length > 2 ?
+            <div className="special-sec py-2 px-3 rounded-3 bg-white">
+              <Slider {...slider2}>
+                {feature.map((item, i) => (
+                  <div key={i} className="feature">
+                    <img src={item.img} className='w-75' style={{ height: '180px' }} alt="doctor" />
+                    <h6 className='mb-2'>{item.title}</h6>
+                    <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>{item.text}</p>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+            :
+            <div className="row gx-0 d-flex justify-content-center align-items-center bg-white rounded-3 shadow px-3 py-2 special-sec">
+              <div className="col-md-4 col-11">
+                <div className="feature">
+                  <img src={img1} className='w-75' style={{ height: '180px' }} alt="doctor" />
+                  <h6 className='mb-2'>SAME DAY DENTISTRY</h6>
+                  <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>Procedures such as a root canal & crown, extraction & implant, and bone graft/sinus lift normally take 3-5 visits. We can do it in one!</p>
+                </div>
+              </div>
+              <div className="col-md-4 col-11">
+                <div className="feature">
+                  <img src={img2} className='w-75' style={{ height: '180px' }} alt="doctor" />
+                  <h6 className='mb-2'>SPECIALIST CONSULTATION</h6>
+                  <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>We take pride in explaining to our patients the status of their dental health. We guide you in developing an effective treatment plan.</p>
+                </div>
+              </div>
+              <div className="col-md-4 col-11">
+                <div className="feature">
+                  <img src={img3} className='w-75' style={{ height: '180px' }} alt="doctor" />
+                  <h6 className='mb-2'>ONLINE APPOINTMENT</h6>
+                  <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>Fill out the form, tell us your convenient time for an appointment and we will call you for confirmation</p>
+                </div>
               </div>
             </div>
-            <div className="col-md-4 col-11">
-              <div className="feature">
-                <img src={img2} className='w-75' style={{ height: '180px' }} alt="doctor" />
-                <h6 className='mb-2'>SPECIALIST CONSULTATION</h6>
-                <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>We take pride in explaining to our patients the status of their dental health. We guide you in developing an effective treatment plan.</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-11">
-              <div className="feature">
-                <img src={img3} className='w-75' style={{ height: '180px' }} alt="doctor" />
-                <h6 className='mb-2'>ONLINE APPOINTMENT</h6>
-                <p className='text-muted' style={{ fontSize: '14px', width: '75%' }}>Fill out the form, tell us your convenient time for an appointment and we will call you for confirmation</p>
-              </div>
-            </div>
-          </div>
+          }
 
           <ul className="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
             <li className="nav-item" role="presentation">
@@ -326,7 +362,7 @@ export default function Home({ val }) {
                   <div className="img-tab">
                     <Slider {...slider1} className='text-center' dir='ltr'>
                       {cases.map((item, i) => (
-                        <img key={i} src={item.img} alt={item.alt} style={{ minHeight: '300px', maxHeight: '350px', cursor: 'pointer' }} className='rounded-4' />
+                        <img key={i} src={item.img} alt={item.alt} style={{ minHeight: '250px', maxHeight: '300px', cursor: 'pointer' }} className='rounded-4' />
                       ))}
                     </Slider>
                     {/* <img src={teeth} className='w-100 rounded-4' alt="patient" /> */}
@@ -358,7 +394,7 @@ export default function Home({ val }) {
                     </button>
                   </div>
                 </div>
-                <div className="col-md-6 col-11">
+                {/* <div className="col-md-6 col-11">
                   <div  className='app__protocol-right'>
                     <div className='video-wrapper' style={{ position: 'relative', boxShadow: '0 25px 80px rgb(0 0 0 / 20%)' }}>
 
@@ -393,6 +429,16 @@ export default function Home({ val }) {
 
                     </div> 
                   </div>
+                </div> */}
+                <div className="col-md-6 col-11">
+                  <div className="img-tab">
+                    <Slider {...slider1} className='text-center' dir='ltr'>
+                      {cases.map((item, i) => (
+                        <img key={i} src={item.img} alt={item.alt} style={{ minHeight: '250px', maxHeight: '300px', cursor: 'pointer' }} className='rounded-4' />
+                      ))}
+                    </Slider>
+                    {/* <img src={teeth} className='w-100 rounded-4' alt="patient" /> */}
+                  </div>
                 </div>
               </div>
 
@@ -419,7 +465,7 @@ export default function Home({ val }) {
                     </button>
                   </div>
                 </div>
-                <div className="col-md-6 col-11">
+                {/* <div className="col-md-6 col-11">
                   <div  className='app__protocol-right'>
                     <div className='video-wrapper' style={{ position: 'relative', boxShadow: '0 25px 80px rgb(0 0 0 / 20%)' }}>
 
@@ -454,6 +500,16 @@ export default function Home({ val }) {
 
                     </div> 
                   </div>
+                </div> */}
+                <div className="col-md-6 col-11">
+                  <div className="img-tab">
+                    <Slider {...slider1} className='text-center' dir='ltr'>
+                      {cases.map((item, i) => (
+                        <img key={i} src={item.img} alt={item.alt} style={{ minHeight: '250px', maxHeight: '300px', cursor: 'pointer' }} className='rounded-4' />
+                      ))}
+                    </Slider>
+                    {/* <img src={teeth} className='w-100 rounded-4' alt="patient" /> */}
+                  </div>
                 </div>
               </div>
 
@@ -462,19 +518,36 @@ export default function Home({ val }) {
         </div>
       </section>
 
+
       <section id='rashed2' className='py-5'>
         <div className="container">
           <div className="main-title-section text-center mb-3">
             <h2 className='rashed-secondColor mb-4 h1'>Your Smile Creators</h2>
             <p className='mb-0 text-muted'>Meet Our Expert Doctors</p>
           </div>
-          <div className="members">
-            <Slider {...slider2}>
-              {doctors.map((item, i) => (
-                <Member key={i} img={item.img} title={item.title} text={item.text} val={val} />
-              ))}
-            </Slider>
-          </div>
+          {Object.keys(doctors).length > 2 ?
+            <div className="members">
+              <Slider {...slider2}>
+                {doctors.map((item, i) => (
+                  <Member key={i} img={item.img} title={item.title} text={item.text} val={val} />
+                ))}
+              </Slider>
+            </div>
+            :
+            <div className="row gy-4 gx-md-4 d-flex justify-content-center justify-content-md-start align-items-center">
+              <div className="col-lg-4 col-md-6 col-11">
+                <div className="member rounded-4 shadow position-relative mx-auto" style={{border: '5px solid var(--secondColor)' , width: '90%' , cursor: 'pointer'}} dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
+                    <img src={doctor1} className='rounded-4 w-100' style={{  height: '380px'}} alt="doctor" />
+                    {/* <div className="caption-member rashed-mainBg text-white px-2 pt-2 position-absolute bottom-0 start-0 end-0"> */}
+                    <div className="caption-member rashed-secondBg text-white px-2 pt-2 position-absolute bottom-0 start-0 end-0">
+                        <h5>Dr. Betül Akyıldız</h5>
+                        <p>Orthodontics</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          }
+
           <div className="send text-center mt-5"> 
               {/* <button className="animated-button1 whats fix-whats2 w-btn w-btn-open" target="blank"> */}
               <button className="animated-button1 whats fix-whats3 w-btn w-btn-open" target="blank">

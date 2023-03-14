@@ -282,9 +282,10 @@ body {
 /* header */
 
 header {
-    background-image: url(./img/img/slider.png);
+    // background-image: url(./img/img/slider.png);
     min-height: 700px;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -333,7 +334,7 @@ header .caption h1 {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header {
         min-height: 600px;
         height: 600px;
@@ -443,7 +444,7 @@ header .caption h1 {
     background-color: var(--transparent);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #rashed .caption-tab button {
         margin-left: auto;
         margin-right: auto;
@@ -505,7 +506,7 @@ header .caption h1 {
 .app__protocol-right {
     position: relative;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:768px) {
         margin-top: 50px !important;
     }
 
@@ -714,7 +715,7 @@ header .caption h1 {
         width: 40px;
     }
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:768px) {
 
         .virus-1,
         .virus-2,
@@ -730,7 +731,7 @@ header .caption h1 {
         }
     }
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:768px) {
 
         .virus-1,
         .virus-2,
@@ -823,7 +824,7 @@ header .caption h1 {
         z-index: 9;
         width: 244px;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:768px) {
             display: none;
         }
     }
@@ -941,7 +942,8 @@ header .caption h1 {
         background: hsla(0, 0%, 0%, 0.05);
         border-radius: 20px;
         text-align: center;
-        padding: 1.25rem 2rem;
+        padding: 1.5rem;
+        width: 90% !important;
 
         img {
             width: 80px;
@@ -980,7 +982,7 @@ header .caption h1 {
         // img {
         //     width: 150px;
 
-        //     @media screen and (max-width:767px) {
+        //     @media screen and (max-width:768px) {
         //         width: 70% !important;
         //     }
         // }
@@ -1352,7 +1354,7 @@ footer form button:hover {
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .column__sm-reverse {
         flex-direction: column-reverse !important;
     }

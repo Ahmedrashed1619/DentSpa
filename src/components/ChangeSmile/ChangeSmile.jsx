@@ -23,6 +23,7 @@ import PhoneInput from 'react-phone-input-2';
 
 
 const ChangeSmile = ({val}) => {
+
   const slider2 = {
     dots: true,
     arrows: false,
@@ -107,20 +108,106 @@ const ChangeSmile = ({val}) => {
     ]
 
 
+    const slider3 = {
+      dots: true,
+      arrows: false,
+      infinite: true,
+      // centerMode: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      autoplay: true,
+      speed: 500,
+      autoplaySpeed: 4000,
+      cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        // {
+        //   breakpoint: 570,
+        //   settings: {
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1
+        //   }
+        // },
+      ]
+    };
+
+    const numss =
+    [
+      {
+        id: 1,
+        number: '17',
+        title: 'Dental Clinics',
+        icon: icons1,
+      },
+      {
+        id: 2,
+        number: '50',
+        title: 'Doctors Staff',
+        icon: icons2,
+      },
+      {
+        id: 3,
+        number: '20',
+        title: 'Years of Experience',
+        icon: icons3,
+      },
+      {
+        id: 4,
+        number: '96',
+        title: 'Satisfaction Rate',
+        icon: icons4,
+      },
+    ]
+
+
   return (
 
     <>
-      <div className="app__ChangeSmile" dir={val === 'ar' || val ===  'ur'  ? 'rtl' : 'ltr'}>
+      <div className="app__ChangeSmile" dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
         <Container >
           <div className="main-title-section text-center">
             <h2 className='rashed-secondColor'>We Change Your Smile, You Change Your Life</h2>
           </div>
-          <Row className='app__ChangeSmile-img mt-5' dir={val === 'ar' || val ===  'ur' || 'ur'? 'rtl' : 'ltr'}>
-            <Slider {...slider2}>
-              {Smiles.map((item, i) => (
-                <MemberSmail val={val} key={i} img={item.img} title={item.title} text={item.text} />
-              ))}
-            </Slider>
+          <Row className='app__ChangeSmile-img mt-5' dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
+            {Object.keys(Smiles).length > 2 ?
+              <Slider {...slider2}>
+                {Smiles.map((item, i) => (
+                  <MemberSmail val={val} key={i} img={item.img} title={item.title} text={item.text} />
+                ))}
+              </Slider>
+              :
+              <div className="col-lg-4 col-md-6 col-11">
+                  <div className="smile rounded-4 shadow position-relative mx-auto overflow-hidden" style={{ border: '4px solid var(--mainColor)' , width: '90%'}}  dir={val === 'ar' || val ===  'ur' ? 'rtl' : 'ltr'}>
+                    <img src={img1} className='w-100' style={{height: '240px'}} alt="member-img" />
+                    <div className="layer-smile rashed-mainBg h-100 position-absolute py-3 px-1">
+                      <h5 className='mb-4' style={{fontWeight: 600}}>
+                        <i className={`fas fa-cloud ${val === 'ar' || val ===  'ur' ? 'ms-2' : 'me-2'}`}></i>
+                        Clear Aligner & Invisalign
+                      </h5>
+                      <p>
+                        Invisalign or Clear Alaigner is a series of clear teeth aligners that work to
+                        straighten the teeth over time without the hassle, pain, and no look of metal
+                        braces, it is the new innovation of orthodontics.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            }
+
           </Row>
           <div className="center btn__animation" dir={val === 'ar' || val ===  'ur' || 'ur'? 'rtl' : 'ltr'}>
             <button className="animated-button1 whats fix-whats2 w-btn w-btn-open" target="blank">
@@ -137,53 +224,71 @@ const ChangeSmile = ({val}) => {
           </div>
         </Container>
       </div>
-      <div className="nums py-5 rashed-mainBg" dir={val === 'ar' || val ===  'ur'   ? 'rtl' : 'ltr'}>
+
+      <div className="nums py-5" dir={val === 'ar' || val ===  'ur'   ? 'rtl' : 'ltr'}>
 
         <Container>
-          <div className="row gy-4 ">
-            <div className=" col-md-3 col-6">
-              <div className="numb text-white">
-                <img src={icons1} alt="icon-img" />
-                <h2>
-                  17
-                  <span>+</span>
-                </h2>
-                <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Dental Clinics</p>
+
+          {Object.keys(numss).length > 3 ?
+            <Slider {...slider3} className='text-center'>
+              {numss.map((item, i) => (
+                <div key={i} className="numb text-white">
+                  <img src={item.icon} className='mx-auto' alt="icon-img" />
+                  <h2>
+                    {item.number}
+                    <span>+</span>
+                  </h2>
+                  <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>{item.title}</p>
+                </div>
+              ))}
+            </Slider>
+            :
+            <div className="row gy-4 ">
+              <div className=" col-md-3 col-6">
+                <div className="numb text-white">
+                  <img src={icons1} alt="icon-img" />
+                  <h2>
+                    17
+                    <span>+</span>
+                  </h2>
+                  <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Dental Clinics</p>
+                </div>
+              </div>
+              <div className=" col-md-3 col-6">
+                <div className="numb text-white">
+                  <img src={icons2} alt="icon-img" />
+                  <h2>
+                    50
+                    <span>+</span>
+                  </h2>
+                  <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Doctors &amp; Staff</p>
+                </div>
+              </div>
+              <div className=" col-md-3 col-6">
+                <div className="numb text-white mt">
+                  <img src={icons3} alt="icon-img" />
+                  <h2>
+                    20
+                    <span>+</span>
+                  </h2>
+                  <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Years of Experience</p>
+                </div>
+              </div>
+              <div className=" col-md-3  col-6">
+                <div className="numb text-white mt">
+                  <img src={icons4} alt="icon-img" />
+                  <h2>
+                    96
+                    <span>+</span>
+                  </h2>
+                  <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Satisfaction Rate</p>
+                </div>
               </div>
             </div>
-            <div className=" col-md-3 col-6">
-              <div className="numb text-white">
-                <img src={icons2} alt="icon-img" />
-                <h2>
-                  50
-                  <span>+</span>
-                </h2>
-                <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Doctors &amp; Staff</p>
-              </div>
-            </div>
-            <div className=" col-md-3 col-6">
-              <div className="numb text-white mt">
-                <img src={icons3} alt="icon-img" />
-                <h2>
-                  20
-                  <span>+</span>
-                </h2>
-                <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Years of Experience</p>
-              </div>
-            </div>
-            <div className=" col-md-3  col-6">
-              <div className="numb text-white mt">
-                <img src={icons4} alt="icon-img" />
-                <h2>
-                  96
-                  <span>+</span>
-                </h2>
-                <p style={{fontWeight: '500' , whiteSpace: 'nowrap'}}>Satisfaction Rate</p>
-              </div>
-            </div>
-          </div>
+          }
         </Container>
       </div>
+
       <div className="app__Partners " dir={val === 'ar' || val ===  'ur'? 'rtl' : 'ltr'}>
         <Container>
           <div className="main-title-section text-center mb-4">
