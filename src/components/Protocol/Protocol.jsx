@@ -102,7 +102,7 @@ const Protocol = ({ val }) => {
               </div>
             </Col>
             <Col lg={6} className='app__protocol-right mx-auto'>
-              <h2 className='special-reverce-heading-sm h1 mb-4'>Pandemic Distancing Protocol</h2>
+              <h2 className='special-reverce-heading-sm h1 mb-4' dir={val === 'ar' || val === 'ur' ? 'rtl' : 'ltr'}>Pandemic Distancing Protocol</h2>
               {/* <div className='video-wrapper' style={{ position: 'relative', boxShadow: '0 25px 80px rgb(0 0 0 / 20%)' }}>
 
                 <img src={img} alt="video-wrapper" className='w-100' />
