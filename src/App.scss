@@ -28,6 +28,19 @@ body {
     background-color: var(--white);
 }
 
+
+#ready {
+    text-align: center;
+    z-index: 999999;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColor);
+    background-color: #000000;
+}
+
 .rashed-mainColor {
     color: var(--mainColor);
 }
